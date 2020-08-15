@@ -365,7 +365,7 @@ VOID StartScanning(std::vector <std::wstring> vwsArgs) {
 		}
 	}
 
-	// Populat targets vector
+	// Populate ports vector
 	if (targetPorts.empty() == TRUE) { // Verify target port(s) is/are defined
 		std::wcout << L"Error: You must specify at least 1 port via '-p'\n" << std::endl;
 		PrintUsage();
@@ -383,7 +383,7 @@ VOID StartScanning(std::vector <std::wstring> vwsArgs) {
 		vPorts.push_back(targetPorts.substr(prev_pos, pos-prev_pos));
 	}
 
-	// Populat targets vector
+	// Populate targets vector
 	if (targetHost.empty() == FALSE) {
 		vTargets.push_back(targetHost);
 	}
